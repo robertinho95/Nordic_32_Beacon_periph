@@ -1,0 +1,1079 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Andrea Rossi, Home, LIC=S5ITG-VU01H-WKTB8-3KBUU-HIEF1-LZ5P9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.30.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.42.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Roberto\Desktop\template_nrf52832\Project\Template_NRF52832.uvproj
+Project File Date:  06/02/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'flash_s140_nrf52_7.0.1_softdevice'
+assembling arm_startup_nrf52.s...
+compiling utf.c...
+compiling system_nrf52.c...
+compiling main.c...
+C:\Nordic\SDK\components\boards\boards.h(87): error:  #35: #error directive: "Board is not defined"
+  #error "Board is not defined"
+SRC\main.c: 0 warnings, 1 error
+compiling boards.c...
+C:\Nordic\SDK\components\boards\boards.h(87): error:  #35: #error directive: "Board is not defined"
+  #error "Board is not defined"
+C:\Nordic\SDK\components\boards\boards.c: 0 warnings, 1 error
+compiling bsp.c...
+C:\Nordic\SDK\components\boards\boards.h(87): error:  #35: #error directive: "Board is not defined"
+  #error "Board is not defined"
+C:\Nordic\SDK\components\libraries\bsp\bsp.c: 0 warnings, 1 error
+compiling nrf_mpu_lib.c...
+compiling nrf_stack_guard.c...
+compiling service_if.c...
+compiling nrf_crypto_aead.c...
+compiling nrf_crypto_error.c...
+compiling nrf_crypto_eddsa.c...
+compiling nrf_crypto_ecdsa.c...
+compiling nrf_crypto_aes_shared.c...
+compiling nrf_crypto_ecdh.c...
+compiling nrf_crypto_aes.c...
+compiling nrf_crypto_ecc.c...
+compiling nrf_crypto_shared.c...
+compiling nrf_crypto_init.c...
+compiling nrf_crypto_hkdf.c...
+compiling nrf_crypto_hash.c...
+compiling nrf_crypto_rng.c...
+compiling nrf_crypto_hmac.c...
+compiling cc310_backend_aes.c...
+compiling cc310_backend_chacha_poly_aead.c...
+compiling cc310_backend_aes_aead.c...
+compiling cc310_backend_hash.c...
+compiling cc310_backend_eddsa.c...
+compiling cc310_backend_ecdsa.c...
+compiling cc310_backend_ecdh.c...
+compiling cc310_backend_ecc.c...
+compiling oberon_backend_ecc.c...
+compiling oberon_backend_ecdh.c...
+compiling oberon_backend_ecdsa.c...
+compiling oberon_backend_eddsa.c...
+compiling cc310_backend_mutex.c...
+compiling oberon_backend_chacha_poly_aead.c...
+compiling cc310_backend_init.c...
+C:\Nordic\SDK\components\libraries\crypto\backend\cc310\cc310_backend_init.c(85): error:  #20: identifier "NRF_CRYPTOCELL" is undefined
+      NRF_CRYPTOCELL->ENABLE = 1;
+C:\Nordic\SDK\components\libraries\crypto\backend\cc310\cc310_backend_init.c(134): error:  #20: identifier "NRF_CRYPTOCELL" is undefined
+      NRF_CRYPTOCELL->ENABLE = 1;
+C:\Nordic\SDK\components\libraries\crypto\backend\cc310\cc310_backend_init.c: 0 warnings, 2 errors
+compiling cc310_backend_shared.c...
+C:\Nordic\SDK\components\libraries\crypto\backend\cc310\cc310_backend_shared.c(62): error:  #20: identifier "NRF_CRYPTOCELL" is undefined
+          NRF_CRYPTOCELL->ENABLE = 1;
+C:\Nordic\SDK\components\libraries\crypto\backend\cc310\cc310_backend_shared.c(67): error:  #20: identifier "CRYPTOCELL_IRQn" is undefined
+          NVIC_EnableIRQ(CRYPTOCELL_IRQn);
+C:\Nordic\SDK\components\libraries\crypto\backend\cc310\cc310_backend_shared.c(90): error:  #20: identifier "NRF_CRYPTOCELL" is undefined
+          NRF_CRYPTOCELL->ENABLE = 0;
+C:\Nordic\SDK\components\libraries\crypto\backend\cc310\cc310_backend_shared.c(95): error:  #20: identifier "CRYPTOCELL_IRQn" is undefined
+          NVIC_DisableIRQ(CRYPTOCELL_IRQn);
+C:\Nordic\SDK\components\libraries\crypto\backend\cc310\cc310_backend_shared.c: 0 warnings, 4 errors
+compiling cc310_backend_rng.c...
+compiling oberon_backend_hash.c...
+compiling cc310_backend_hmac.c...
+compiling mbedtls_backend_ecdh.c...
+compiling mbedtls_backend_ecdsa.c...
+compiling mbedtls_backend_ecc.c...
+compiling mbedtls_backend_hash.c...
+compiling mbedtls_backend_init.c...
+compiling oberon_backend_hmac.c...
+compiling cifra_backend_aes_aead.c...
+compiling mbedtls_backend_hmac.c...
+compiling mbedtls_backend_aes_aead.c...
+compiling mbedtls_backend_aes.c...
+compiling micro_ecc_backend_ecc.c...
+compiling micro_ecc_backend_ecdsa.c...
+compiling micro_ecc_backend_ecdh.c...
+compiling nrf_hw_backend_init.c...
+compiling nrf_hw_backend_rng_mbedtls.c...
+compiling nrf_hw_backend_rng.c...
+compiling nrf_drv_ppi.c...
+compiling nrf_drv_rng.c...
+compiling nrf_drv_clock.c...
+compiling nrf_drv_power.c...
+compiling nrf_drv_spi.c...
+compiling nrf_drv_swi.c...
+compiling nrf_drv_spis.c...
+compiling nrfx_atomic.c...
+compiling nrf_drv_uart.c...
+compiling nrf_nvmc.c...
+compiling nrf_drv_twi.c...
+compiling nrfx_power.c...
+compiling nrfx_lpcomp.c...
+compiling nrfx_comp.c...
+compiling nrfx_clock.c...
+compiling nrfx_pdm.c...
+compiling nrfx_i2s.c...
+compiling nrfx_gpiote.c...
+compiling nrfx_qspi.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(71): error:  #20: identifier "NRF_QSPI_Type" is undefined
+      NRF_QSPI_TASK_ACTIVATE   = offsetof(NRF_QSPI_Type, TASKS_ACTIVATE),   /**< Activate the QSPI interface. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(71): error:  #29: expected an expression
+      NRF_QSPI_TASK_ACTIVATE   = offsetof(NRF_QSPI_Type, TASKS_ACTIVATE),   /**< Activate the QSPI interface. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(71): error:  #18: expected a ")"
+      NRF_QSPI_TASK_ACTIVATE   = offsetof(NRF_QSPI_Type, TASKS_ACTIVATE),   /**< Activate the QSPI interface. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(72): error:  #29: expected an expression
+      NRF_QSPI_TASK_READSTART  = offsetof(NRF_QSPI_Type, TASKS_READSTART),  /**< Start transfer from external flash memory to internal RAM. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(72): error:  #18: expected a ")"
+      NRF_QSPI_TASK_READSTART  = offsetof(NRF_QSPI_Type, TASKS_READSTART),  /**< Start transfer from external flash memory to internal RAM. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(73): error:  #29: expected an expression
+      NRF_QSPI_TASK_WRITESTART = offsetof(NRF_QSPI_Type, TASKS_WRITESTART), /**< Start transfer from internal RAM to external flash memory. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(73): error:  #18: expected a ")"
+      NRF_QSPI_TASK_WRITESTART = offsetof(NRF_QSPI_Type, TASKS_WRITESTART), /**< Start transfer from internal RAM to external flash memory. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(74): error:  #29: expected an expression
+      NRF_QSPI_TASK_ERASESTART = offsetof(NRF_QSPI_Type, TASKS_ERASESTART), /**< Start external flash memory erase operation. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(74): error:  #18: expected a ")"
+      NRF_QSPI_TASK_ERASESTART = offsetof(NRF_QSPI_Type, TASKS_ERASESTART), /**< Start external flash memory erase operation. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(75): error:  #29: expected an expression
+      NRF_QSPI_TASK_DEACTIVATE = offsetof(NRF_QSPI_Type, TASKS_DEACTIVATE), /**< Deactivate the QSPI interface. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(75): error:  #18: expected a ")"
+      NRF_QSPI_TASK_DEACTIVATE = offsetof(NRF_QSPI_Type, TASKS_DEACTIVATE), /**< Deactivate the QSPI interface. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(81): error:  #29: expected an expression
+      NRF_QSPI_EVENT_READY = offsetof(NRF_QSPI_Type, EVENTS_READY) /**< QSPI peripheral is ready after it executes any task. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(81): error:  #18: expected a ")"
+      NRF_QSPI_EVENT_READY = offsetof(NRF_QSPI_Type, EVENTS_READY) /**< QSPI peripheral is ready after it executes any task. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(87): error:  #20: identifier "QSPI_INTENSET_READY_Msk" is undefined
+      NRF_QSPI_INT_READY_MASK = QSPI_INTENSET_READY_Msk /**< Interrupt on READY event. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(114): error:  #20: identifier "QSPI_IFCONFIG0_READOC_FASTREAD" is undefined
+      NRF_QSPI_READOC_FASTREAD = QSPI_IFCONFIG0_READOC_FASTREAD, /**< Single data line SPI. FAST_READ (opcode 0x0B). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(115): error:  #20: identifier "QSPI_IFCONFIG0_READOC_READ2O" is undefined
+      NRF_QSPI_READOC_READ2O   = QSPI_IFCONFIG0_READOC_READ2O,   /**< Dual data line SPI. READ2O (opcode 0x3B). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(116): error:  #20: identifier "QSPI_IFCONFIG0_READOC_READ2IO" is undefined
+      NRF_QSPI_READOC_READ2IO  = QSPI_IFCONFIG0_READOC_READ2IO,  /**< Dual data line SPI. READ2IO (opcode 0xBB). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(117): error:  #20: identifier "QSPI_IFCONFIG0_READOC_READ4O" is undefined
+      NRF_QSPI_READOC_READ4O   = QSPI_IFCONFIG0_READOC_READ4O,   /**< Quad data line SPI. READ4O (opcode 0x6B). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(118): error:  #20: identifier "QSPI_IFCONFIG0_READOC_READ4IO" is undefined
+      NRF_QSPI_READOC_READ4IO  = QSPI_IFCONFIG0_READOC_READ4IO   /**< Quad data line SPI. READ4IO (opcode 0xEB). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(124): error:  #20: identifier "QSPI_IFCONFIG0_WRITEOC_PP" is undefined
+      NRF_QSPI_WRITEOC_PP    = QSPI_IFCONFIG0_WRITEOC_PP,    /**< Single data line SPI. PP (opcode 0x02). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(125): error:  #20: identifier "QSPI_IFCONFIG0_WRITEOC_PP2O" is undefined
+      NRF_QSPI_WRITEOC_PP2O  = QSPI_IFCONFIG0_WRITEOC_PP2O,  /**< Dual data line SPI. PP2O (opcode 0xA2). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(126): error:  #20: identifier "QSPI_IFCONFIG0_WRITEOC_PP4O" is undefined
+      NRF_QSPI_WRITEOC_PP4O  = QSPI_IFCONFIG0_WRITEOC_PP4O,  /**< Quad data line SPI. PP4O (opcode 0x32). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(127): error:  #20: identifier "QSPI_IFCONFIG0_WRITEOC_PP4IO" is undefined
+      NRF_QSPI_WRITEOC_PP4IO = QSPI_IFCONFIG0_WRITEOC_PP4IO, /**< Quad data line SPI. READ4O (opcode 0x38). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(133): error:  #20: identifier "QSPI_IFCONFIG0_ADDRMODE_24BIT" is undefined
+      NRF_QSPI_ADDRMODE_24BIT = QSPI_IFCONFIG0_ADDRMODE_24BIT, /**< 24-bit addressing. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(134): error:  #20: identifier "QSPI_IFCONFIG0_ADDRMODE_32BIT" is undefined
+      NRF_QSPI_ADDRMODE_32BIT = QSPI_IFCONFIG0_ADDRMODE_32BIT  /**< 32-bit addressing. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(140): error:  #20: identifier "QSPI_IFCONFIG1_SPIMODE_MODE0" is undefined
+      NRF_QSPI_MODE_0 = QSPI_IFCONFIG1_SPIMODE_MODE0, /**< Mode 0 (CPOL=0, CPHA=0). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(141): error:  #20: identifier "QSPI_IFCONFIG1_SPIMODE_MODE3" is undefined
+      NRF_QSPI_MODE_1 = QSPI_IFCONFIG1_SPIMODE_MODE3  /**< Mode 1 (CPOL=1, CPHA=1). */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(147): error:  #20: identifier "QSPI_ADDRCONF_MODE_NoInstr" is undefined
+      NRF_QSPI_ADDRCONF_MODE_NOINSTR = QSPI_ADDRCONF_MODE_NoInstr, /**< Do not send any instruction. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(148): error:  #20: identifier "QSPI_ADDRCONF_MODE_Opcode" is undefined
+      NRF_QSPI_ADDRCONF_MODE_OPCODE  = QSPI_ADDRCONF_MODE_Opcode,  /**< Send opcode. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_qspi.h(149): error:  #20: identifier "QSPI_ADDRCONF_MODE_OpByte0" is undefined
+      NRF_QSPI_ADDRCONF_MODE_OPBYTE0 = QSPI_ADDRCONF_MODE_OpByte0, /**< Send opcode, byte0. */
+C:\Nordic\SDK\modules\nrfx\drivers\src\nrfx_qspi.c: 0 warnings, 30 errors
+compiling nrfx_pwm.c...
+C:\Nordic\SDK\modules\nrfx\drivers\src\nrfx_pwm.c(511): error:  #20: identifier "NRF_PWM3" is undefined
+      irq_handler(NRF_PWM3, &m_cb[NRFX_PWM3_INST_IDX]);
+C:\Nordic\SDK\modules\nrfx\drivers\src\nrfx_pwm.c: 0 warnings, 1 error
+compiling nrfx_prs.c...
+compiling nrfx_ppi.c...
+compiling nrfx_rng.c...
+compiling nrfx_qdec.c...
+compiling nrfx_rtc.c...
+compiling nrfx_spi.c...
+compiling nrfx_spim.c...
+C:\Nordic\SDK\modules\nrfx\drivers\src\nrfx_spim.c(565): error:  #20: identifier "SPIM3_EASYDMA_MAXCNT_SIZE" is undefined
+      NRFX_ASSERT(SPIM_LENGTH_VALIDATE(p_instance->drv_inst_idx,
+C:\Nordic\SDK\modules\nrfx\drivers\src\nrfx_spim.c(698): error:  #20: identifier "NRF_SPIM3" is undefined
+      irq_handler(NRF_SPIM3, &m_cb[NRFX_SPIM3_INST_IDX]);
+C:\Nordic\SDK\modules\nrfx\drivers\src\nrfx_spim.c: 0 warnings, 2 errors
+compiling nrfx_systick.c...
+compiling nrfx_swi.c...
+compiling nrfx_timer.c...
+compiling nrfx_saadc.c...
+compiling nrfx_spis.c...
+compiling nrfx_usbd.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\drivers\src\nrfx_usbd.c: 0 warnings, 30 errors
+compiling nrfx_twim.c...
+compiling nrfx_wdt.c...
+compiling nrfx_uart.c...
+compiling nrfx_twis.c...
+compiling nrfx_twi.c...
+compiling nrfx_uarte.c...
+compiling orkney24pts.c...
+compiling orkney8pts.c...
+compiling app_error.c...
+compiling app_error_handler_keil.c...
+compiling app_fifo.c...
+compiling app_error_weak.c...
+compiling app_gpiote.c...
+compiling app_button.c...
+compiling nrf_twi_sensor.c...
+compiling app_usbd_audio.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\class\audio\app_usbd_audio.c: 0 warnings, 30 errors
+compiling app_usbd.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\app_usbd.c: 0 warnings, 30 errors
+compiling app_pwm.c...
+compiling app_usbd_cdc_acm.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.c: 0 warnings, 30 errors
+compiling app_scheduler.c...
+compiling app_uart_fifo.c...
+compiling app_sdcard.c...
+compiling app_usbd_core.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\app_usbd_core.c: 0 warnings, 30 errors
+compiling app_usbd_hid_kbd.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.c: 0 warnings, 30 errors
+compiling app_usbd_string_desc.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\app_usbd_string_desc.c: 0 warnings, 30 errors
+compiling app_usbd_hid.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\class\hid\app_usbd_hid.c: 0 warnings, 30 errors
+compiling app_usbd_hid_generic.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\class\hid\generic\app_usbd_hid_generic.c: 0 warnings, 30 errors
+compiling app_usbd_msc.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\class\msc\app_usbd_msc.c: 0 warnings, 30 errors
+compiling app_usbd_hid_mouse.c...
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #20: identifier "NRF_USBD_Type" is undefined
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(61): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN0    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[0] ), /**< Captures the EPIN[0].PTR, EPIN[0].MAXCNT, and EPIN[0].CONFIG registers values, and enables control endpoint IN 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(62): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN1    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[1] ), /**< Captures the EPIN[1].PTR, EPIN[1].MAXCNT, and EPIN[1].CONFIG registers values, and enables data endpoint IN 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(63): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN2    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[2] ), /**< Captures the EPIN[2].PTR, EPIN[2].MAXCNT, and EPIN[2].CONFIG registers values, and enables data endpoint IN 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(64): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN3    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[3] ), /**< Captures the EPIN[3].PTR, EPIN[3].MAXCNT, and EPIN[3].CONFIG registers values, and enables data endpoint IN 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(65): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN4    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[4] ), /**< Captures the EPIN[4].PTR, EPIN[4].MAXCNT, and EPIN[4].CONFIG registers values, and enables data endpoint IN 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(66): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN5    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[5] ), /**< Captures the EPIN[5].PTR, EPIN[5].MAXCNT, and EPIN[5].CONFIG registers values, and enables data endpoint IN 5 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(67): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN6    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[6] ), /**< Captures the EPIN[6].PTR, EPIN[6].MAXCNT, and EPIN[6].CONFIG registers values, and enables data endpoint IN 6 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(68): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPIN7    = offsetof(NRF_USBD_Type, TASKS_STARTEPIN[7] ), /**< Captures the EPIN[7].PTR, EPIN[7].MAXCNT, and EPIN[7].CONFIG registers values, and enables data endpoint IN 7 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(69): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTISOIN    = offsetof(NRF_USBD_Type, TASKS_STARTISOIN   ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT, and ISOIN.CONFIG registers values, and enables sending data on ISO endpoint 8. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(70): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT0   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[0]), /**< Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT, and EPOUT[0].CONFIG registers values, and enables control endpoint 0 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(71): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT1   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[1]), /**< Captures the EPOUT[1].PTR, EPOUT[1].MAXCNT, and EPOUT[1].CONFIG registers values, and enables data endpoint 1 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(72): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT2   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[2]), /**< Captures the EPOUT[2].PTR, EPOUT[2].MAXCNT, and EPOUT[2].CONFIG registers values, and enables data endpoint 2 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(73): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT3   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[3]), /**< Captures the EPOUT[3].PTR, EPOUT[3].MAXCNT, and EPOUT[3].CONFIG registers values, and enables data endpoint 3 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(74): error:  #18: expected a ")"
+      NRF_USBD_TASK_STARTEPOUT4   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[4]), /**< Captures the EPOUT[4].PTR, EPOUT[4].MAXCNT, and EPOUT[4].CONFIG registers values, and enables data endpoint 4 to respond to traffic from host. */
+C:\Nordic\SDK\modules\nrfx\hal/nrf_usbd.h(75): error:  #29: expected an expression
+      NRF_USBD_TASK_STARTEPOUT5   = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[5]), /**< Captures the EPOUT[5].PTR, EPOUT[5].MAXCNT, and EPOUT[5].CONFIG registers values, and enables data endpoint 5 to respond to traffic from host. */
+C:\Nordic\SDK\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.c: 0 warnings, 30 errors
+compiling blockwise.c...
+compiling cifra_cmac.c...
+compiling app_util_platform.c...
+compiling cifra_eax_aes.c...
+compiling eax.c...
+compiling fnmatch.c...
+compiling gf128.c...
+compiling crc16.c...
+compiling crc32.c...
+compiling hardfault_handler_keil.c...
+compiling hci_slip.c...
+compiling hci_mem_pool.c...
+compiling hardfault_implementation.c...
+compiling hci_transport.c...
+compiling modes.c...
+compiling fds.c...
+compiling led_softblink.c...
+compiling nrf_assert.c...
+compiling nrf_atomic.c...
+compiling nrf_atfifo.c...
+compiling mem_manager.c...
+compiling low_power_pwm.c...
+compiling nrf_balloc.c...
+compiling nrf_cli.c...
+compiling nrf_fprintf.c...
+compiling nrf_fprintf_format.c...
+compiling nrf_fstorage.c...
+compiling nrf_cli_uart.c...
+compiling nrf_csense.c...
+compiling nrf_drv_csense.c...
+compiling nrf_fstorage_nvmc.c...
+compiling nrf_ringbuf.c...
+compiling nrf_section_iter.c...
+compiling nrf_memobj.c...
+compiling nrf_sortlist.c...
+compiling nrf_queue.c...
+compiling nrf_gfx.c...
+compiling nrf_pwr_mgmt.c...
+assembling task_manager_core_keil.s...
+compiling nrf_strerror.c...
+compiling slip.c...
+compiling nrf_atflags.c...
+compiling app_timer_freertos.c...
+compiling task_manager.c...
+compiling nrf_spi_mngr.c...
+compiling aes.c...
+compiling nrf_twi_mngr.c...
+compiling aesni.c...
+compiling arc4.c...
+compiling asn1parse.c...
+compiling base64.c...
+compiling asn1write.c...
+compiling blowfish.c...
+compiling certs.c...
+compiling ccm.c...
+compiling camellia.c...
+compiling nrf_log_frontend.c...
+compiling nrf_log_str_formatter.c...
+compiling bignum.c...
+compiling cmac.c...
+compiling cipher.c...
+compiling cipher_wrap.c...
+compiling ctr_drbg.c...
+compiling debug.c...
+compiling ecdh.c...
+compiling dhm.c...
+compiling des.c...
+compiling ecdsa.c...
+compiling entropy_poll.c...
+C:\Nordic\SDK\external\mbedtls\library\entropy_poll.c(48): error:  #35: #error directive: "Platform entropy sources only work on Unix and Windows, see MBEDTLS_NO_PLATFORM_ENTROPY in config.h"
+  #error "Platform entropy sources only work on Unix and Windows, see MBEDTLS_NO_PLATFORM_ENTROPY in config.h"
+C:\Nordic\SDK\external\mbedtls\library\entropy_poll.c: 0 warnings, 1 error
+compiling entropy.c...
+compiling ecp_curves.c...
+compiling havege.c...
+compiling ecp.c...
+compiling gcm.c...
+compiling error.c...
+compiling md2.c...
+compiling md4.c...
+compiling hmac_drbg.c...
+compiling md.c...
+compiling memory_buffer_alloc.c...
+compiling md5.c...
+compiling md_wrap.c...
+compiling padlock.c...
+compiling oid.c...
+compiling pkcs11.c...
+compiling pk.c...
+compiling pem.c...
+compiling pk_wrap.c...
+compiling pkcs12.c...
+compiling pkcs5.c...
+compiling platform.c...
+compiling pkparse.c...
+compiling pkwrite.c...
+compiling ripemd160.c...
+compiling sha256.c...
+compiling sha1.c...
+compiling ssl_cache.c...
+compiling ssl_ciphersuites.c...
+compiling rsa.c...
+compiling sha512.c...
+compiling ssl_cookie.c...
+compiling threading.c...
+compiling ssl_ticket.c...
+compiling version.c...
+compiling version_features.c...
+compiling x509.c...
+C:\Nordic\SDK\external\mbedtls\library\x509.c(76): error:  #5: cannot open source input file "sys/types.h": No such file or directory
+  #include <sys/types.h>
+C:\Nordic\SDK\external\mbedtls\library\x509.c: 0 warnings, 1 error
+compiling ssl_cli.c...
+compiling x509_create.c...
+compiling x509_crt.c...
+C:\Nordic\SDK\external\mbedtls\library\x509_crt.c(72): error:  #5: cannot open source input file "sys/types.h": No such file or directory
+  #include <sys/types.h>
+C:\Nordic\SDK\external\mbedtls\library\x509_crt.c: 0 warnings, 1 error
+compiling ssl_srv.c...
+compiling x509_crl.c...
+compiling x509_csr.c...
+compiling xtea.c...
+compiling ssl_tls.c...
+compiling list.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling stream_buffer.c...
+compiling timers.c...
+compiling queue.c...
+compiling tasks.c...
+compiling port.c...
+compiling port_cmsis.c...
+compiling heap_4.c...
+compiling SEGGER_RTT_Syscalls_KEIL.c...
+compiling SEGGER_RTT_printf.c...
+compiling SEGGER_RTT.c...
+compiling port_cmsis_systick.c...
+compiling nrf_sdh_soc.c...
+compiling nrf_sdh.c...
+compiling ble_advdata.c...
+compiling nrf_sdh_freertos.c...
+compiling ble_conn_state.c...
+compiling nrf_sdh_ble.c...
+compiling ble_conn_params.c...
+compiling auth_status_tracker.c...
+compiling ble_srv_common.c...
+compiling nrf_ble_gatt.c...
+compiling ble_advertising.c...
+compiling gatts_cache_manager.c...
+compiling gatt_cache_manager.c...
+compiling id_manager.c...
+compiling pm_buffer.c...
+compiling peer_data_storage.c...
+compiling peer_database.c...
+compiling peer_manager_handler.c...
+compiling security_dispatcher.c...
+compiling security_manager.c...
+compiling peer_manager.c...
+compiling nrf_ble_qwr.c...
+compiling peer_id.c...
+compiling nrf_ble_scan.c...
+".\_build\s132_nrf52_7.0.1_softdevice.hex" - 375 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:57
+</pre>
+</body>
+</html>
